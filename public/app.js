@@ -38,12 +38,13 @@ tl
 // Stagger highlight section 
 let tl2 = gsap.timeline({
     scrollTrigger: {
-        trigger: "#highlights",      
+        trigger: "#highlights",   
+        start: "75% 100%"   
     }
 });
 
 tl2
-.from("#highlights a", { start: "bottom center", opacity: 0, y: 50, stagger: 0.1 })
+.from("#highlights a", { opacity: 0, y: 50, stagger: 0.1 })
 
 
 // ___________________________________
@@ -52,21 +53,21 @@ tl2
 let tl3 = gsap.timeline({
     scrollTrigger: {
         trigger: "specs",    
-        start: "top top"  
+        start: "75% 50%"  
     }
 });
 
 tl3
-.from("#slide-right", { start: "center center", x:-100, opacity:0, duration: 0.5 })
-.from("#specs li", { start: "center center", opacity: 0, y: 50, stagger: 0.1})
+.from("#slide-right", { x:-100, opacity:0, duration: 0.5 })
+.from("#specs li", { opacity: 0, y: 50, stagger: 0.1})
 
 // ___________________________________
     
 // heading and text animations 
-gsap.from("#fade-up-1", { scrollTrigger:"#fade-up-1", start: "center center", y:50, opacity:0, duration: 0.5 })
-gsap.from("#fade-up-2", { scrollTrigger:"#fade-up-2", start: "center center", y:50, opacity:0, duration: 0.5 })
-gsap.from("#fade-in-2", { scrollTrigger:"#fade-in-2", start: "center center", opacity:0, duration: 1, delay: 0.3 })
-gsap.from("#fade-in-3", { scrollTrigger:"#fade-in-3", start: "center center", opacity:0, duration: 1, delay: 0.3 })
-gsap.from("#fade-in-4", { scrollTrigger:"#fade-in-4", start: "center center", opacity:0, duration: 1, delay: 0.3 })
+gsap.from("#fade-up-1", { scrollTrigger:"#fade-up-1", start: "75% 100%", y:50, opacity:0, duration: 0.5 })
+gsap.from("#fade-up-2", { scrollTrigger:"#fade-up-2", start: "75% 100%", y:50, opacity:0, duration: 0.5 })
+gsap.from("#fade-in-2", { scrollTrigger:"#fade-in-2", start: "75% 100%", opacity:0, duration: 1, delay: 0.3 })
+gsap.from("#fade-in-3", { scrollTrigger:"#fade-in-3", start: "75% 100%", opacity:0, duration: 1, delay: 0.3 })
+gsap.from("#fade-in-4", { scrollTrigger:"#fade-in-4", start: "75% 100%", opacity:0, duration: 1, delay: 0.3 })
 
 // ___________________________________
