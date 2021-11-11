@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-black text-white font-paragraph;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply uppercase font-heading text-gray-100 mt-0 mb-0 ml-auto mr-auto;
+}
+
+@layer utilities {
+    @variants responsive {
+        .full-width {
+            max-width: 100%;
+        }
+        .half-width {
+            max-width: 50%;
+        }
+    }
+}
