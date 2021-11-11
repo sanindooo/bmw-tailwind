@@ -54,7 +54,7 @@ tl2
 let tl3 = gsap.timeline({
     scrollTrigger: {
         trigger: "techspecs",    
-        start: "80% 100%"  
+        start: "70% 100%"  
     }
 });
 
@@ -68,11 +68,13 @@ tl3
 let tl5 = gsap.timeline({
     scrollTrigger: {
         trigger: "#footer",    
-        start: "top 90%"  
+        start: "top 60%"  
     }
 });
 
 tl5
+.from("form", { opacity: 0, x: -100 })
+.from(".stagger-links h3", { opacity: 0, x: -10, stagger: 0.1})
 .from(".stagger-links a", { opacity: 0, y: 50, stagger: 0.1})
 
 // ___________________________________
