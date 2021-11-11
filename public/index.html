@@ -27,6 +27,7 @@
             position: absolute;
             top: -1px;
             z-index: 10;
+            width: 100vw;
         }
 
         #curve-2 {
@@ -38,7 +39,7 @@
 </head>
 <body>
 
-    <header class="md:flex items-center justify-between container fixed left-0 right-0 z-50 bg-black py-2 md:py-5">
+    <header id="fade-down" class="md:flex items-center justify-between container fixed left-0 right-0 z-50 bg-black py-2 md:py-5">
 
         <div class="flex items-center justify-between px-4 py-2 md:px-4 md:py-2">
             <div>
@@ -202,10 +203,10 @@
         </section>
 
         <section>
-            <div class="container py-14 md:p-20">
+            <div id="techspecs" class="container py-14 md:p-20">
                 <h2 id="fade-in-4" class="py-2 text-center text-3xl sm:text-5xl md:text-7xl">Technical Data of the BMW i4 M50</h2> 
 
-                <div class="md:flex ">
+                <div class="md:flex">
 
                     <img id="slide-right" src="../img/bmw-i4-m50-onepager-gallery-impressions-thumbnail-05.jpg.asset.1625831624605.jpg" alt="" class="py-3 md:py-8 full-width md:half-width">
 
@@ -240,23 +241,23 @@
         </section>
 
         <footer class="bg-gray-900 mt-14 md:mt-20">
-            <div class="container py-14 md:pt-20 md:pb-7 flex flex-wrap md:justify-between md:max-w-5xl">
-                <div class="flex flex-col mb-4 mr-4">
+            <div id="footer" class="container py-14 md:pt-20 md:pb-7 flex flex-wrap md:justify-between md:max-w-5xl">
+                <div class="flex flex-col mb-4 mr-4 stagger-links">
                     <h3 class="ml-0 mb-1">Contact</h3>
                     <a href="#" class="py-1 text-gray-300 hover:text-gray-100 transition-colors duration-300 ease-in-out">Get in touch</a>
                     <a href="#" class="py-1 text-gray-300 hover:text-gray-100 transition-colors duration-300 ease-in-out">Contact Financial Services</a>
                     <a href="#" class="py-1 text-gray-300 hover:text-gray-100 transition-colors duration-300 ease-in-out">Find a BMW Centre</a>
                     <a href="#" class="py-1 text-gray-300 hover:text-gray-100 transition-colors duration-300 ease-in-out">Local Genius</a>
                 </div>
-                <div class="flex flex-col mb-4 mr-4">
+                <div class="flex flex-col mb-4 mr-4 stagger-links">
                     <h3 class="ml-0 mb-1">Quick Links</h3>
                     <a href="#" class="py-1 text-gray-300 hover:text-gray-100 transition-colors duration-300 ease-in-out">Book a test drive</a>
                     <a href="#" class="py-1 text-gray-300 hover:text-gray-100 transition-colors duration-300 ease-in-out">Download a brochure</a>
                     <a href="#" class="py-1 text-gray-300 hover:text-gray-100 transition-colors duration-300 ease-in-out">Subscribe to BMW News</a>
                     <a href="#" class="py-1 text-gray-300 hover:text-gray-100 transition-colors duration-300 ease-in-out">Book a service</a>
                 </div>
-                <div class="flex flex-col">
-                    <h3 class="ml-0 mb-1">Experience BMW</h3>
+                <div class="flex flex-col stagger-links">
+                    <h3 class="ml-0 mb-1 ">Experience BMW</h3>
                     <a href="#" class="py-1 text-gray-300 hover:text-gray-100 transition-colors duration-300 ease-in-out">About us</a>
                     <a href="#" class="py-1 text-gray-300 hover:text-gray-100 transition-colors duration-300 ease-in-out">BMW Plug-in Hybrid</a>
                     <a href="#" class="py-1 text-gray-300 hover:text-gray-100 transition-colors duration-300 ease-in-out">BMW M</a>
